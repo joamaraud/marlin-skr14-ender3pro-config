@@ -43,7 +43,7 @@ Ce guide couvre les problèmes courants et leurs solutions.
    - **Éviter** : `Firmware.bin`, `firmware .bin`, `firmware.BIN`
 
 4. **Bootloader absent**
-   - SKR V1.4 Turbo a normalement le bootloader installé d'usine
+   - La SKR V1.4 a normalement le bootloader installé d'usine
    - Solution : Flasher le bootloader via ST-Link (avancé)
 
 ### ❌ L'écran reste noir après flash

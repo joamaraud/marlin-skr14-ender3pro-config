@@ -1,13 +1,13 @@
 # Configuration Marlin 2.1.x pour Ender 3 Pro
-**Build personnalisé avec BTT SKR V1.4 Turbo + CR Touch + modules BTT**
+**Build personnalisé avec BTT SKR V1.4 + CR Touch + modules BTT**
 
 ![License](https://img.shields.io/badge/license-GPL--3.0-blue.svg)
 ![Marlin](https://img.shields.io/badge/Marlin-2.1.x-red.svg)
-![Platform](https://img.shields.io/badge/platform-LPC1769-green.svg)
+![Platform](https://img.shields.io/badge/platform-LPC1768-green.svg)
 
 ## 📋 Vue d'ensemble
 
-Configuration complète et optimisée de Marlin 2.1.x (bugfix-2.1.x) pour une **Ender 3 Pro** équipée de composants BigTreeTech professionnels.
+Configuration complète et optimisée de Marlin 2.1.x (bugfix-2.1.x) pour une **Ender 3 Pro** équipée de la carte BTT SKR V1.4 et de composants BigTreeTech professionnels.
 
 ## 🔧 Spécifications matérielles
 
@@ -15,7 +15,7 @@ Configuration complète et optimisée de Marlin 2.1.x (bugfix-2.1.x) pour une **
 
 | Composant | Modèle | Description |
 |-----------|--------|-------------|
-| **Carte mère** | BTT SKR V1.4 Turbo | 32-bit ARM Cortex-M3 LPC1769 @ 120MHz |
+| **Carte mère** | BTT SKR V1.4 | 32-bit ARM Cortex-M3 LPC1768 @ 100MHz |
 | **Drivers** | TMC2209 (x4) | Drivers silencieux UART avec StealthChop |
 | **Écran** | TFT35 | Écran tactile BigTreeTech 3.5" |
 | **Extrudeur** | Creality Sprite Pro | Extrudeur direct drive |
@@ -67,11 +67,11 @@ Configuration complète et optimisée de Marlin 2.1.x (bugfix-2.1.x) pour une **
 
 3. **Compiler le firmware**
    - Ouvrir PlatformIO (icône dans la barre latérale)
-   - Environnement : `LPC1769` (déjà configuré par défaut)
+   - Environnement : `LPC1768` (déjà configuré par défaut)
    - Cliquer sur `Build` (ou appuyer sur `Ctrl+Alt+B`)
 
 4. **Flasher le firmware**
-   - Le fichier compilé se trouve dans `.pio/build/LPC1769/firmware.bin`
+   - Le fichier compilé se trouve dans `.pio/build/LPC1768/firmware.bin`
    - Copier `firmware.bin` à la racine de la carte SD
    - Éteindre l'imprimante
    - Insérer la carte SD dans le slot de la SKR V1.4
@@ -177,7 +177,7 @@ marlin-skr14-ender3pro-config/
 │   ├── Configuration.h          # Configuration principale
 │   ├── Configuration_adv.h      # Configuration avancée
 │   └── [autres fichiers Marlin]
-├── platformio.ini               # Configuration PlatformIO (LPC1769)
+├── platformio.ini               # Configuration PlatformIO (LPC1768)
 ├── gcode/
 │   ├── start-gcode.gcode       # G-code de démarrage
 │   └── end-gcode.gcode         # G-code de fin

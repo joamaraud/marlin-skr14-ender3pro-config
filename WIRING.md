@@ -6,7 +6,7 @@ Ce guide détaille le câblage complet de tous les composants pour cette configu
 
 ```
 ┌─────────────────────────────────────────────────────────┐
-│              BTT SKR V1.4 TURBO                         │
+│              BTT SKR V1.4                               │
 │                                                         │
 │  [X-MOTOR] [Y-MOTOR] [Z-MOTOR] [E0-MOTOR]             │
 │  [X-STOP]  [Y-STOP]  [Z-STOP]  [E0-STOP]              │
