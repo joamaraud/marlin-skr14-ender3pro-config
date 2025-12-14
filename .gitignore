@@ -1,0 +1,34 @@
+# PlatformIO build artifacts
+.pio/
+.vscode/
+.pioenvs/
+.piolibdeps/
+lib/
+libdeps/
+*.pyc
+
+# Compiled firmware
+*.bin
+*.hex
+*.elf
+*.map
+
+# OS files
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*~
+
+# IDE files
+.idea/
+*.sublime-*
+*.code-workspace
+
+# Backup files
+*.bak
+*.old
+*~
+
+# Marlin build files
+Marlin/src/pins/pinsDebug_list.h
